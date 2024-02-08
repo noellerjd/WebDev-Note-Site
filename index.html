@@ -45,7 +45,7 @@
         </div>
         <div id="introduction-to-html" class="notes-card">
           <h2>Introduction to HTML</h2>
-          <p class="date">Date: 2/1/24</p>
+          <p class="date">Date: 1/31/24 to 2/1/24</p>
           <hr />
           <p>
             <u>Hypertext:</u> Pieces of text that link to other pieces of text
@@ -143,6 +143,7 @@
         </div>
         <div id="introduction-to-css" class="notes-card">
           <h2>Introduction to CSS</h2>
+          <p class="date">Date: 2/3/24</p>
           <hr />
           <p>
             <u>Element Selectors:</u> allows you to apply styles to all of a
@@ -178,6 +179,7 @@
         </div>
         <div id="font-properties" class="notes-card">
           <h2>Font Properties</h2>
+          <p class="date">Date: 2/3/24</p>
           <hr />
           <h3>Font Size</h3>
           <p>
@@ -223,6 +225,143 @@
             the starting edge and the ending edge, and should space the text
             dynamically to make this happen for everything except the last word.
           </p>
+        </div>
+        <div id="intermediate-css" class="notes-card">
+          <h2>Intermediate CSS</h2>
+          <p class="date">Date: 2/4/24</p>
+          <hr />
+          <h3>Cascading Style Sheets</h3>
+          <div class="img-container">
+            <img
+              class="demo-img"
+              src="./assets/waterfall-drawing.jpg"
+              alt="Image of a waterfall with mutiple levels"
+            />
+          </div>
+          <p>
+            <u>Position:</u> CSS will read top to bottom, so one selector at the
+            bottom will be the final one applied, for example if you have two
+            attribute selectors both referencing line items:
+          </p>
+          <p>li {color:red} <--- this one is read first</p>
+          <p>li {color:blue} <--- this one is read second.</p>
+          <p>
+            The last one to be read will be applied, therfore the line items
+            would be blue.
+          </p>
+          <p>
+            <u>Specificity:</u> CSS will prioritize specifity over position, for
+            example any style that refrences a class will override any element
+            selectors. Any ID selectors will take priority over class selectors.
+            Any attribute selectors will also override class selectors but won't
+            override ID selectors. See image below:
+          </p>
+          <div class="img-container">
+            <img
+              class="demo-img"
+              src="./assets/css-specificity.jpg"
+              alt="Photo from my own notes of the order in which the CSS will prioritize selectors"
+            />
+          </div>
+          <p>
+            <u>Type:</u> CSS will prioritize linked stylesheets last. Higher on
+            priority is the HTML contained CSS (the styling you do in the
+            &lt;head&gt; of the html document). The highest priority is styling
+            done withing the physical tags of the HTML such as &lt;li
+            style="color:red"&gt;
+          </p>
+          <div class="img-container">
+            <img
+              class="demo-img"
+              src="./assets/type-notes.jpg"
+              alt="Photo from my own notes of the order in which the CSS will prioritize types of css"
+            />
+          </div>
+          <p>
+            <u>!Important:</u> this is a keyword you can apply to any rule ie.
+            p{color:green !important;} this will give the styling highest
+            priority no matter what.
+          </p>
+          <h3>Alternate Selectors</h3>
+          <p>
+            <u>Grouping Selectors:</u> h1, h2{color:blueviolet;} will group two
+            different selectors with the same styling. In this case both h1s and
+            h2s will become blueviolet.
+          </p>
+          <p>
+            <u>Child Selectors:</u> .box > p {color:firebrick} can be used to
+            select a direct child of an element. In this case any p tags that
+            are children of something with the "box" class will change their
+            color to firebrick
+          </p>
+          <p>
+            <u>Descendant Selector:</u> .box li{color:blue} or selector
+            selector{color:blue}. These will apply css to the descendant of the
+            left selector, in example the li that is a sescendant of something
+            with the "box" class.
+          </p>
+          <p>
+            <u>Chaining Selector:</u> SelectorSelector{color:seagreen} or
+            h1#tile.big.heading{color:seagreen;}. A chaining selector is a very
+            specific way to apply styles to an element, there should be no
+            spaces when using this selector and element selectors must always go
+            first.
+          </p>
+          <p>
+            <u>Combining Combiners:</u> Selector
+            SelectorSelector{font-size:0.5rem;} or ul p.done{font-size:0.5rem}.
+            This is a way to select a more specific element for styling in css.
+            In the example, we are selecting a p element with the class of done
+            but only if it's a descendant of a ul element.
+          </p>
+          <h3>CSS Positioning</h3>
+          <p>There are four different values for positioning.</p>
+          <div class="img-container">
+            <img
+              class="demo-img long-img"
+              src="./assets/css-positioning-note.jpg"
+              alt="Photo from my own notes of examples of positioning in css"
+            />
+          </div>
+          <p>
+            <u>Static Positioning:</u> HTML's default flow. item flows as it
+            would in the actual html file. Displayed below the code above it by
+            default.
+          </p>
+          <p>
+            <u>Relative Positioning:</u> Item positioned relative to it's
+            default position. Changing the items position would be relative to
+            it's supposed position.
+          </p>
+          <p>
+            <u>Absolute Positioning:</u> Sets item's position to nearest
+            <b>positioned</b> anscestor, or top left corner of the webpage. If
+            the ancestor doesn't have a position set, the second rule becomes
+            true.
+          </p>
+          <p>
+            <u>Fixed Positioning:</u> Positions relative to the top left corner
+            of the browser. This won't change even when scrolling up or down on
+            the webpage and will always remain visable by default. This is what
+            I used to have the menu on desktop stay no matter where the user
+            scrolls in this webpage.
+          </p>
+          <p>
+            <i
+              >- a lot of the time you will see a parent set to relative and the
+              child set to absolute</i
+            >
+          </p>
+          <p>
+            <u>Z-index:</u> determines which element is displayed over another
+            element if applicable. Values for the z-index must be a positive or
+            negative integer, but can range all the way to ±2147483647.
+          </p>
+        </div>
+        <div id="advanced-css" class="notes-card">
+          <h2>Advanced CSS</h2>
+          <p class="date">Date: 2/5/24</p>
+          <hr />
         </div>
       </div>
     </div>
