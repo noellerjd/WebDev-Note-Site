@@ -1,0 +1,153 @@
+:root {
+  --softblue: #6cace4;
+  --lightgrey: #f0f0f0;
+  --darkgrey: #333333;
+  --mutedgreen: #88c0a8;
+  --mutedblue: #62aec9;
+  --lightblue: #d9e8f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Dosis", sans-serif;
+  color: var(--darkgrey);
+}
+body {
+  background-color: var(--lightgrey);
+}
+#header {
+  background-color: var(--softblue);
+  box-shadow: var(--darkgrey) 0px 3px 5px 0px;
+}
+#header > h1 {
+  color: var(--darkgrey);
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+}
+#main-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 1rem;
+  gap: 1rem;
+}
+#table-contents {
+  position: fixed;
+  background-color: var(--lightblue);
+  border: 2px solid var(--mutedblue);
+  box-shadow: var(--darkgrey) 3px 4px 0px;
+  border-radius: 5px;
+  height: min-content;
+  padding: 10px;
+  transition: ease all 0.3s;
+}
+#table-contents:hover {
+  box-shadow: var(--mutedgreen) 3px 4px 0px;
+}
+#links {
+  list-style-type: none;
+}
+#links > li {
+  font-size: 1.5rem;
+  margin-top: 3px;
+  font-weight: bold;
+}
+#links > li > a {
+  text-decoration: none;
+  color: var(--mutedblue);
+}
+#links > li > a:hover {
+  text-decoration: underline;
+  color: var(--darkgrey);
+}
+#notes-container {
+  margin-right: 10px;
+  margin-left: 225px;
+  flex-basis: 100%;
+}
+#home {
+  text-align: center;
+}
+.notes-card {
+  background-color: var(--lightgrey);
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: var(--darkgrey) 4px 4px;
+}
+.notes-card > h2 {
+  font-family: "Gochi Hand", cursive;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--mutedblue);
+}
+.notes-card > h2:hover {
+  color: var(--mutedgreen);
+}
+.notes-card > p {
+  font-size: 2rem;
+}
+.notes-card > p > u {
+  color: var(--mutedblue);
+}
+.notes-card > p > u:hover {
+  color: var(--mutedgreen);
+}
+.notes-card > h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--mutedblue);
+}
+.notes-card > h3:hover {
+  color: var(--mutedgreen);
+}
+.notes-card > ul {
+  border: solid var(--darkgrey);
+  width: fit-content;
+  padding: 10px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+.notes-card > ol {
+  border: solid var(--darkgrey);
+  width: fit-content;
+  padding: 10px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+.notes-card > ul > li {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+.notes-card > ol > li {
+  font-size: 2rem;
+  margin-left: 30px;
+}
+pre {
+  background-color: var(--darkgrey);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-right: 60px;
+  width: 750%;
+  border: var(--darkgrey) solid;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+code {
+  color: var(--mutedgreen);
+}
+.code-block {
+  display: flex;
+  justify-content: center;
+}
+.date {
+  text-align: center;
+  margin-bottom: 20px;
+}

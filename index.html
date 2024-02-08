@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&family=Gochi+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <title>Justin's Notes</title>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Justin's Webdev Notes</h1>
+    </div>
+    <div id="main-container">
+      <div id="table-contents">
+        <ul id="links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#introduction-to-html">Introduction to HTML</a></li>
+          <li><a href="#intermediate-html">Intermediate HTML</a></li>
+          <li><a href="#introduction-to-css">Introduction to CSS</a></li>
+          <li><a href="#font-properties">Font Properties</a></li>
+          <li><a href="#intermediate-css">Intermediate CSS</a></li>
+          <li><a href="#advanced-css">Advanced CSS</a></li>
+          <li><a href="#css-flexbox">CSS Flexbox</a></li>
+        </ul>
+      </div>
+      <div id="notes-container">
+        <div id="home" class="notes-card">
+          <h2>What is this?</h2>
+          <hr />
+          <p>
+            This is just a basic website I threw together to track my notes in a
+            way that also allowed me to practice some of what I'm learning first
+            hand!
+          </p>
+          <br />
+          <p>
+            This way I don't have to flip through pages and try to work with my
+            horrible hand writing when I need to look up some of my notes!
+          </p>
+        </div>
+        <div id="introduction-to-html" class="notes-card">
+          <h2>Introduction to HTML</h2>
+          <p class="date">Date: 2/1/24</p>
+          <hr />
+          <p>
+            <u>Hypertext:</u> Pieces of text that link to other pieces of text
+          </p>
+          <p>
+            <u>Markup Language:</u> Marks what attributes the text should have,
+            ie. Bold, Italic, Underline, etc. &lt;H1&gt;
+          </p>
+          <h3 class="topic">What are my goals?</h3>
+          <p>
+            <u>1.) Why do I want to learn this skill?</u> I love computers, and
+            I love to create. If I can combine these two passions to do
+            something that would make me a living and allow me to do what I
+            love-- it would be amazing!
+          </p>
+          <p>
+            <u>2.) What will I achieve if I learn this skill?</u> Ideally, a
+            more fulfilling career but also amazing feeling that I've followed
+            through with learning something.
+          </p>
+          <p>
+            <u>3.) How will this skill my life and career?</u> I would love to
+            see this create more opportunities for me and make my life more
+            enjoyable with enough money to be able to survive!
+          </p>
+          <p>
+            <u>4.) How will learning this impact the lives of my family?</u> I
+            would love it if this took some of the stress off of my wife and
+            also I would love to be able to buy my corgi, Einstein, more toys
+            and more room to run around!!
+          </p>
+          <p>
+            <u>5.) How will I feel if I accomplish this?</u> I will feel OVER
+            THE MOON. I would great to feel the enjoyment that comes with
+            mastering a skill or at least focusing enough to see it through.
+          </p>
+          <p>
+            <u>6.) What would my life look like if I accomplish this?</u>
+            Hopefully less stress, car issues, and less worrying about my life
+            in general! Maybe a house to make payments on and more rooms (with
+            maybe less noisy neigbors)!
+          </p>
+          <h3>List Items</h3>
+          <p>
+            <u>Unordered Lists:</u> Orders lists with bullet points, example
+            below:
+          </p>
+          <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+          </ul>
+          <p><u>Ordered Lists:</u> Orders lists with with numbers points</p>
+          <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+          </ol>
+          <h3>Nesting and Indentation</h3>
+          <p>
+            You can nest &lt;ul&gt; and &lt;ol&gt; within each other to make a
+            more detailed list which could look like:
+          </p>
+          <div class="code-block">
+            <pre><code>
+              &lt;ul&gt;
+                  &lt;li&gt;Unordered list item 1&lt;/li&gt;
+                      &lt;ul&gt;
+                          &lt;li&gt;Unordered List Item 1.1&lt;/li&gt;
+                          &lt;li&gt;Unordered List Item 1.2&lt;/li&gt;
+                      &lt;/ul&gt;
+                  &lt;li&gt;Unordered list item 2&lt;/li&gt;
+                  &lt;li&gt;Unordered list item 3&lt;/li&gt;
+                      &lt;ul&gt;
+                          &lt;li&gt;Unordered List Item 3.1&lt;/li&gt;
+                          &lt;li&gt;Unordered List Item 3.2&lt;/li&gt;
+                      &lt;/ul&gt;
+              &lt;/ul&gt;
+          
+              &lt;ol&gt;
+                  &lt;li&gt;Ordered list item 1&lt;/li&gt;
+                      &lt;ol&gt;
+                          &lt;li&gt;Ordered List Item 1.1&lt;/li&gt;
+                          &lt;li&gt;Ordered List Item 1.2&lt;/li&gt;
+                      &lt;/ol&gt;
+                  &lt;li&gt;Ordered list item 2&lt;/li&gt;
+                  &lt;li&gt;Ordered list item 3&lt;/li&gt;
+                      &lt;ol&gt;
+                          &lt;li&gt;Ordered List Item 3.1&lt;/li&gt;
+                          &lt;li&gt;Ordered List Item 3.2&lt;/li&gt;
+                      &lt;/ol&gt;
+                &lt;/ol&gt;</code
+              ></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
