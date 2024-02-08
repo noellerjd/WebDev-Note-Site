@@ -21,7 +21,6 @@
         <ul id="links">
           <li><a href="#header">Home</a></li>
           <li><a href="#introduction-to-html">Introduction to HTML</a></li>
-          <li><a href="#intermediate-html">Intermediate HTML</a></li>
           <li><a href="#introduction-to-css">Introduction to CSS</a></li>
           <li><a href="#font-properties">Font Properties</a></li>
           <li><a href="#intermediate-css">Intermediate CSS</a></li>
@@ -33,13 +32,13 @@
         <div id="home" class="notes-card">
           <h2>What is this?</h2>
           <hr />
-          <p>
+          <p style="text-align: justify">
             This is just a basic website I threw together to track my notes in a
             way that also allowed me to practice some of what I'm learning first
             hand!
           </p>
           <br />
-          <p>
+          <p style="text-align: justify">
             This way I don't have to flip through pages and try to work with my
             horrible hand writing when I need to look up some of my notes!
           </p>
@@ -141,6 +140,89 @@
                 &lt;/ol&gt;</code
               ></pre>
           </div>
+        </div>
+        <div id="introduction-to-css" class="notes-card">
+          <h2>Introduction to CSS</h2>
+          <hr />
+          <p>
+            <u>Element Selectors:</u> allows you to apply styles to all of a
+            certain tag in your html. <br />Such as p{font-size:3rem;}
+          </p>
+          <p>
+            <u>Attribute Selectors:</u> selects elements with a certain
+            attribute. p[draggable]{color:blue;} will only effect p tags with
+            the draggable attribute.<br />
+            You can also select their value inversely by doing something like
+            p[draggable="false"]{color:blue;}, which will only effect p tags
+            that have their draggable attribute set to false.
+          </p>
+          <p>
+            <u>Universal Selector:</u> * using an astrisk you can select
+            everything and apply a style universally. <br />Such as *
+            {font-family: "Times New Roman", serif;}
+          </p>
+          <p>
+            <u>ID Selector:</u> allows you to style a specific element with a
+            set ID. Usually this is for elements that won't be used more than
+            once, such as a header or footer, etc. It will look something like
+            this<br />#header{background-color:white;}
+          </p>
+          <p>
+            <u>Class Selector:</u> allows you to style a specific element with a
+            set class. Usually this is for elements that you will be repeating,
+            so you can apply style to the class that will automatically apply to
+            everything with this class, such as wanting to apply underlines to
+            every p with the class="underlined" and would look like this: <br />
+            .underlined{font-decoration: underline;}
+          </p>
+        </div>
+        <div id="font-properties" class="notes-card">
+          <h2>Font Properties</h2>
+          <hr />
+          <h3>Font Size</h3>
+          <p>
+            <u>1px:</u> meaning 1 pixel or 1/96th and inch, about the size of a
+            pixel.
+          </p>
+          <p>
+            <u>1pt:</u> meaning 1 point or 1/72nd of an inch. Typically used in
+            word processors like Microsoft Word or Gmail/Outlook.
+          </p>
+          <p>
+            <u>1em:</u> literally meaning the size of an M, the widest letter in
+            the alphabet. 1m would be 100% of the parent.
+          </p>
+          <p>
+            <u>1rem:</u> meaning root em. This would be relative to the root of
+            the HTML instead of the parent. 1rem = ~20px
+          </p>
+          <h3>Text Align</h3>
+          <p>
+            **Apologies if this throws you off, I styled each to represent how
+            they would look in actual code.**
+          </p>
+          <p style="text-align: center">
+            <u>Center:</u> centers text in the middle of their parent.
+          </p>
+          <p style="text-align: left">
+            <u>Left:</u> aligns text to the left of their parent.
+          </p>
+          <p style="text-align: right">
+            <u>Right:</u> aligns text to the right of their parent.
+          </p>
+          <p style="text-align: start">
+            <u>Start:</u> aligns text to the start of their parent, depending on
+            the language it's coded. Left in english.
+          </p>
+          <p style="text-align: end">
+            <u>End:</u> aligns text to the end of their parent, depending on the
+            language it's coded. Right for english.
+          </p>
+          <p style="text-align: justify">
+            <u>Justify:</u> lines up text to align the structure of text to be
+            the starting edge and the ending edge, will space dynamically to
+            make this happen for everything except the last word.
+          </p>
         </div>
       </div>
     </div>

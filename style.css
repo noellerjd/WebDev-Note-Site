@@ -86,6 +86,7 @@ body {
   color: var(--mutedgreen);
 }
 .notes-card > p {
+  margin-top: 10px;
   font-size: 2rem;
 }
 .notes-card > p > u {
