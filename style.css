@@ -87,7 +87,7 @@ body {
 }
 .notes-card > p {
   margin-top: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .notes-card > p > u {
   color: var(--mutedblue);
@@ -99,7 +99,7 @@ body {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: underline;
   color: var(--mutedblue);
 }
@@ -121,11 +121,11 @@ body {
   border-radius: 5px;
 }
 .notes-card > ul > li {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 30px;
 }
 .notes-card > ol > li {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-left: 30px;
 }
 pre {
