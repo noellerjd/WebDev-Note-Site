@@ -165,3 +165,37 @@ code {
 .long-img {
   width: 65%;
 }
+i {
+  text-align: center;
+}
+
+/* Styling for Mobile */
+
+@media (max-width: 781px) {
+  html {
+    width: 100%;
+  }
+  #header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  #table-contents {
+    display: none;
+    width: 0;
+  }
+  #main-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 3rem;
+  }
+  #notes-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #notes-container {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}

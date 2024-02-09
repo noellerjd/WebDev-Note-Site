@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -362,6 +363,204 @@
           <h2>Advanced CSS</h2>
           <p class="date">Date: 2/5/24</p>
           <hr />
+          <h3>Display Properties</h3>
+          <p>
+            <u>Block:</u> <b>display:block;</b> Default formatting, if you have
+            another tag or element it'll go below the item as normal.
+          </p>
+          <p>
+            <u>Inline:</u> <b>display:inline;</b> With inline, if you have two
+            tags it'll make them go side by side until there's no more room in
+            the width of the browser. Inline elements will default to the width
+            of their contetns.
+          </p>
+          <p>
+            <u>Inline Block:</u> <b>display:inline-block;</b> The block portion
+            of this display property allows us to set the height and width of
+            the item. The inline portion allows us to have elements that go on
+            the same line.
+          </p>
+          <p>
+            <u>None: </u> <b>display: none;</b> This will make the element
+            dissapear from the webpage.
+          </p>
+          <h3>CSS Float</h3>
+          <div style="text-align: center">
+            <i>"wrapping text using float and clear"</i>
+          </div>
+          <p>
+            <u>Float Property:</u> <b>float:left; float:right;</b> This allows
+            elements (such as an image) to be take out of the normal flow of the
+            webpage and wraps the rest of the page around them.
+          </p>
+          <p>
+            <u>Clear Property:</u>
+            <b>clear:left; clear:right; clear:both;</b> Allows elements to be
+            exempt from other floating elements ie. used to exclude a footer
+            from a floating element to keep the footer at the bottom of the
+            page.
+          </p>
+          <h3>Responsive Websites</h3>
+          <div style="text-align: center">
+            <i
+              >Using tools to make websites functional on <b>ALL</b> devices.</i
+            >
+          </div>
+          <p>
+            <u>Media Query:</u>
+            <b>@media(max-width:600px){*css for screens 600px wide or less*}</b>
+            can be used to change styling for users on different width devices
+            like tablets and phones.
+          </p>
+          <p>
+            Min-width will do the inverse of max width. You can also combine
+            breakpoints to target screen sizes more specifically, ie.
+            <b>@media(min-width:600px) and (max-width:900px){color:blue}</b> in
+            this example screens that are 600px or higher and 900px or lower
+            will have the text color be blue. This is used in order to design
+            styles for a specific screen size, like a tablet or phone. You can
+            also inverse the min and max to exclude styling on a specific screen
+            size.
+          </p>
+          <p>
+            You can also specify styles for different screen orientations, ie.
+            <b>@media screen(orientation:landscape){color:red}</b> to change
+            styles for only landscape or portrait modes.
+          </p>
+          <p><u>Typical Screen Size Ranges:</u></p>
+          <ul>
+            <li>Mobile Devices: 319px - 480px</li>
+            <li>Tablets: 481px - 1200px</li>
+            <li>Laptops: 1200px - 1600px</li>
+            <li>Desktops: 1600px+</li>
+          </ul>
+          <p>
+            <u>CSS Grid:</u> You can use a grid format to complete the layout by
+            creating a div with a class like "grid-container" followed by
+            specific card layouts within the container and set the display to
+            <b>display:grid;</b>
+          </p>
+
+          <p>
+            You can then use <b>grid-template-columns: 1fr 1fr;</b> for example
+            to specify two columns. 1fr meaning 1 fraction, splitting these
+            columns into two rows of the screen.
+          </p>
+          <p>
+            You can then use <b>grid-template-rows</b> similarly to specify how
+            many rows to display. This can be done in the same way with 1fr or
+            you can alternatively set a pixel height, etc.
+          </p>
+          <p>
+            Using this method you can also set a gap between the rows and
+            columns by using <b>gap: 30px;</b> for example, to specify a 30px
+            gap between each row.
+          </p>
+          <p>
+            If you wanted one column to span two rows (for a header or larger
+            column for example) you can make the class something like: "first
+            card" so it'll still retain the card class but then with .first you
+            can specify <b>grid-column:span 2;</b> or <b>grid-row:span 2;</b> in
+            order to expand the card with the class .first to be the width of
+            two columns or rows, etc.
+          </p>
+          <p>
+            <u>CSS Flexbox</u> Similar to the grid system which is good for 2D
+            design, flexbox is good for 1D design; changing items to apply to
+            vertical or horizontal styling.
+          </p>
+          <p>
+            You can use <b>display:flex;</b> on a parent div to then apply
+            <b>flex:1;</b> to all children to let all flexible children be the
+            same length regardless of its content. You can alternatively change
+            the distribution of each child by changing their flex value.
+          </p>
+          <p>
+            This would still be similar in some ways to the grid style, using
+            containers and cards, but would be more visually complex and
+            responsive.
+          </p>
+          <p>
+            <u>Bootstrap Frameworks:</u> This is a method that uses frameworks
+            pre-coded by other programmers to cut the css down and has different
+            rules for different selectors that are applied by putting in
+            different key words into your classes.
+          </p>
+          <p>
+            Bootstrap for example also has it's own system for putting in
+            responsive design, ie. <b>class="col-4"</b>.
+          </p>
+          <p>
+            Typically the sight is divided into 12 sections and by using
+            <b>col-4</b> it will take up 4/12 of a section, or 1/3 of the
+            webpage. They will respond based on how much of the fraction of the
+            webpage they take up.
+          </p>
+          <h3>Best Practice</h3>
+          <p>
+            Designing layouts was first mainly done by using the
+            <b>table method</b>, which is very much a no-no when it comes to
+            design nowadays.
+          </p>
+          <p>
+            This then evloved to the <b>display tool</b> in CSS (<b
+              >display:inline-block; etc.</b
+            >).
+          </p>
+          <p>
+            This turned out to still be funky to work with which is why
+            eventually they moved onto the <b>float tool</b>
+            <b>(float:left; float:right; float:both)</b> and while this is still
+            in use to float certain elements, back then they found that they
+            could actually design the website using the float tool but still had
+            a lot of flaws. Hence why it's best to use:
+          </p>
+        </div>
+        <div id="css-flexbox" class="notes-card">
+          <h2>CSS Flexbox</h2>
+          <p class="date">Date: 2/6/24</p>
+          <hr />
+          <h3>Flex Box</h3>
+          <p>
+            <u>Display:flex;</u> is completely different from inline, block,
+            etc. It no longer abides by these rules once used. When we give an
+            item <b>display:flex;</b> we give some control to flexbox to allow
+            it to display the code in a reasonable and commonly desired way.
+            With flexbox we have a lot of modifiers to tweak it to achive the
+            look we're going for
+          </p>
+          <p>
+            Flex box ignores any pre-defined rule (<b
+              >display:block; display:inline; etc.</b
+            >) and instead wants to put everything together based on the content
+            within the element to fit them. That being said you can still use
+            the <b>gap:30px</b> for example to put space between the elements.
+          </p>
+          <p>
+            <u>Display: inline-flex;</u> this will try to make your flexbox able
+            to be next to another element or flexbox; similar to a wider
+            reaching inline. This will force the elements to only take up as
+            much width as the widest tag, it's the same as flex but
+            horizontally.
+          </p>
+          <div class="img-container">
+            <img
+              class="demo-img"
+              src="./assets/inline-flex-example.jpg"
+              alt="Photo from my own notes trying to visually display how inline flex would look"
+            />
+          </div>
+          <h3>Flex Direction</h3>
+          <p>
+            By default the flex direction is set to: <b>row</b>. So the items
+            within the flexbox will align horizonally. When set to row, this is
+            called the <b>Main Axis</b>. Alternatively, the opposite axis is
+            called the <b>Cross Axis</b>. If the flex direction is set to row,
+            the cross axis would be vertical. The opposite is true if the flex
+            direction is set to: <b>column</b>.
+            <b>flex-direction: column; flex-direction: row;</b>
+          </p>
+          <p><u>Flex-basis:</u></p>
         </div>
       </div>
     </div>
