@@ -557,10 +557,16 @@
             called the <b>Main Axis</b>. Alternatively, the opposite axis is
             called the <b>Cross Axis</b>. If the flex direction is set to row,
             the cross axis would be vertical. The opposite is true if the flex
-            direction is set to: <b>column</b>.
+            direction is set to: <b>column</b>. ie.
             <b>flex-direction: column; flex-direction: row;</b>
           </p>
-          <p><u>Flex-basis:</u></p>
+          <p>
+            <u>Flex-basis:</u> The flex basis will expand the flex box along the
+            main axis to satisfy the flex-basis requirement. Up and down if
+            direction is set to column, left and right if direction is set to
+            row. For this to work, flex-basis <i>must</i> be set on the
+            children, not the parent.
+          </p>
         </div>
       </div>
     </div>
