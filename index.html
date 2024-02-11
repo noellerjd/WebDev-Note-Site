@@ -558,7 +558,12 @@
             called the <b>Cross Axis</b>. If the flex direction is set to row,
             the cross axis would be vertical. The opposite is true if the flex
             direction is set to: <b>column</b>. ie.
-            <b>flex-direction: column; flex-direction: row;</b>
+            <b>flex-direction: column; flex-direction: row;</b> <br />
+            You can also set them to be in reverse, ie.
+            <b
+              >flex-direction: row-reverse; and flex-direction:
+              column-reverse;</b
+            >
           </p>
           <p>
             <u>Flex-basis:</u> The flex basis will expand the flex box along the
@@ -567,6 +572,80 @@
             row. For this to work, flex-basis <i>must</i> be set on the
             children, not the parent.
           </p>
+          <h3>Flexible Layout</h3>
+          <p>
+            <u>flex-wrap: </u> by default if the flexbox runs out of room it
+            wont automatically move to the next line. You can change this from
+            it's default flex-wrap: nowrap; to flex-wrap: wrap; to have it move
+            items without room to the next line. This is a property that is set
+            on the parent, not the child.
+          </p>
+          <p>
+            <u>flex-flow: </u> is a way to combine both the flex-direction and
+            flex-wrap in one line as they are often used together. ie.
+            <b>flex-flow: row wrap;</b>
+          </p>
+          <p>
+            <u>Order: </u> with a flexbox, by default everything has an order of
+            0, you can adjust an item and set it's order:1; for example and if
+            everything else is still at the default "0", then the set item will
+            appear last in the flexbox. You can set order:" "; to integer and it
+            must be set on the child, not the parent.
+          </p>
+          <p>
+            <u>justify-content:</u> sets the distribution of items within a
+            flexbox along the main axis. you can use
+            <b>justify-content: flex-start</b> to have the items line up from
+            the left or the start of the flexbox, inversely you can use
+            <b>justify-content: flex-end;</b> for the opposite effect (as long
+            as there's room within the flexbox to change this)
+            <b>justify-content: center</b> will make the items gravitate toward
+            the center of the flex box.
+            <b>justify-content: space-between</b> will allow you to have each
+            item spaced to take up the entire width of the flexbox-- adding gaps
+            between items to make this happen.
+            <b>justify-content: space-evenly</b> will line the items up to make
+            the items line up evenly from the center of the flexbox to take up
+            the width of the flexbox. <b>justify-conter: space-around</b> will
+            distribute items evenly and make the start and end gaps half the
+            size of the space between each item.
+          </p>
+          <p>
+            <u>Align Items:</u> is very similar to justify-content except it
+            will alter the items on the cross-axis. Unlike justify-content, for
+            align-items to work you'll need to set the height of the container,
+            and works best if the flex-wrap is set to nowrap. You can still use
+            similar values for the styling as you did with justify-content such
+            as, flex-start; flex-end; center; but can also use align-items:
+            stretch; to have the items take up the entire cross axis of the
+            flex-box. This is set on the parent, not the child.
+          </p>
+          <p>
+            <u>align-self: </u> allows you to set the alignment of a singular
+            item within the flexbox by assigning it on the child you want to
+            affect. You can still use similar values for the styling as you did
+            with justify-content and align-items such as, flex-start; flex-end;
+            center;
+          </p>
+          <p>
+            <u>align-content:</u> align-content is similar to align items except
+            it's made to work with flexbox's that are set to wrap, instead of
+            nowrap. You can still use similar values for the styling as you did
+            with justify-content and align-items such as, flex-start; flex-end;
+            center; This is set on the parent, not the child.
+          </p>
+          <div class="end-page-links">
+            <a
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              alt="link to flexbox cheatsheet"
+              >Link to flexbox cheatsheet</a
+            >
+            <a
+              href="https://flexboxfroggy.com/"
+              alt="link to flexbox froggy game"
+              >Link to flexbox froggy game
+            </a>
+          </div>
         </div>
       </div>
     </div>
